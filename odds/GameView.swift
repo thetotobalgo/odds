@@ -44,7 +44,7 @@ struct GameView: View {
                     Button {
                         fetchData()
                     } label: {
-                        Text("Get odds")
+                        Text("Get oddssss")
                     }
                     .frame(width: 200)
                     .tint(.pink)
