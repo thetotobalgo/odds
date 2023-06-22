@@ -13,7 +13,6 @@ struct SettingsView: View {
     
     var body: some View {
         
-        
         Text("Sport")
         Picker("Select Region", selection: $selectedSport) {
             ForEach(sportsPicker.sorted(by: { $0.key < $1.key }), id: \.key) { key, value in
