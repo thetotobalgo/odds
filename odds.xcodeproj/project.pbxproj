@@ -46,7 +46,6 @@
 		E2CC18EF2A42070900195143 = {
 			isa = PBXGroup;
 			children = (
-				E2CC191B2A42521000195143 /* SettingsView.swift */,
 				E2CC18FA2A42070900195143 /* odds */,
 				E2CC18F92A42070900195143 /* Products */,
 			);
@@ -63,6 +62,7 @@
 		E2CC18FA2A42070900195143 /* odds */ = {
 			isa = PBXGroup;
 			children = (
+				E2CC191B2A42521000195143 /* SettingsView.swift */,
 				E2CC19172A42206700195143 /* NavigationView.swift */,
 				E2CC18FB2A42070900195143 /* oddsApp.swift */,
 				E2CC18FD2A42070900195143 /* ContentView.swift */,
