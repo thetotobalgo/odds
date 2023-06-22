@@ -22,7 +22,7 @@ struct Bookmaker: Codable {
     let markets: [Market]
 }
 
-struct Market: Codable {
+struct Market: Codable{
     let key: String
     let lastUpdate: String
     let outcomes: [Outcome]

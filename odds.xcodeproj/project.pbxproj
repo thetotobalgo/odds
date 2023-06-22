@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433BDF2B2A449F7E007A6D7D /* GameOddsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BDF2A2A449F7E007A6D7D /* GameOddsView.swift */; };
+		433BDF2D2A44ABE4007A6D7D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BDF2C2A44ABE4007A6D7D /* GameViewModel.swift */; };
 		43B0D3FE2A448FF40089A1A1 /* TapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B0D3FD2A448FF40089A1A1 /* TapBar.swift */; };
 		43B0D4002A4492EB0089A1A1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B0D3FF2A4492EB0089A1A1 /* ViewModel.swift */; };
 		E2CC18FC2A42070900195143 /* oddsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC18FB2A42070900195143 /* oddsApp.swift */; };
@@ -14,13 +16,13 @@
 		E2CC19002A42070C00195143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CC18FF2A42070C00195143 /* Assets.xcassets */; };
 		E2CC19042A42070C00195143 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CC19032A42070C00195143 /* Preview Assets.xcassets */; };
 		E2CC190D2A420E8300195143 /* gameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC190C2A420E8300195143 /* gameData.swift */; };
-		E2CC19162A421DE900195143 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC19152A421DE900195143 /* MenuView.swift */; };
-		E2CC19182A42206700195143 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC19172A42206700195143 /* NavigationView.swift */; };
-		E2CC191A2A42355100195143 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC19192A42355100195143 /* GameView.swift */; };
+		E2CC191A2A42355100195143 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC19192A42355100195143 /* GamesView.swift */; };
 		E2CC191C2A42521100195143 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC191B2A42521000195143 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		433BDF2A2A449F7E007A6D7D /* GameOddsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOddsView.swift; sourceTree = "<group>"; };
+		433BDF2C2A44ABE4007A6D7D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		43B0D3FD2A448FF40089A1A1 /* TapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBar.swift; sourceTree = "<group>"; };
 		43B0D3FF2A4492EB0089A1A1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		E2CC18F82A42070900195143 /* odds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = odds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,9 +32,7 @@
 		E2CC19012A42070C00195143 /* odds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = odds.entitlements; sourceTree = "<group>"; };
 		E2CC19032A42070C00195143 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2CC190C2A420E8300195143 /* gameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameData.swift; sourceTree = "<group>"; };
-		E2CC19152A421DE900195143 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		E2CC19172A42206700195143 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
-		E2CC19192A42355100195143 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E2CC19192A42355100195143 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		E2CC191B2A42521000195143 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +50,6 @@
 		43B0D3FC2A448FEA0089A1A1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E2CC19172A42206700195143 /* NavigationView.swift */,
 				43B0D3FD2A448FF40089A1A1 /* TapBar.swift */,
 			);
 			path = Components;
@@ -59,6 +58,7 @@
 		43B0D4012A4493750089A1A1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				433BDF2C2A44ABE4007A6D7D /* GameViewModel.swift */,
 				43B0D3FF2A4492EB0089A1A1 /* ViewModel.swift */,
 			);
 			path = ViewModel;
@@ -67,8 +67,8 @@
 		43B0D4022A4493840089A1A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E2CC19192A42355100195143 /* GameView.swift */,
-				E2CC19152A421DE900195143 /* MenuView.swift */,
+				E2CC19192A42355100195143 /* GamesView.swift */,
+				433BDF2A2A449F7E007A6D7D /* GameOddsView.swift */,
 				E2CC191B2A42521000195143 /* SettingsView.swift */,
 			);
 			path = Views;
@@ -192,14 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433BDF2D2A44ABE4007A6D7D /* GameViewModel.swift in Sources */,
 				E2CC191C2A42521100195143 /* SettingsView.swift in Sources */,
 				43B0D4002A4492EB0089A1A1 /* ViewModel.swift in Sources */,
 				43B0D3FE2A448FF40089A1A1 /* TapBar.swift in Sources */,
 				E2CC18FE2A42070900195143 /* ContentView.swift in Sources */,
-				E2CC19162A421DE900195143 /* MenuView.swift in Sources */,
-				E2CC19182A42206700195143 /* NavigationView.swift in Sources */,
+				433BDF2B2A449F7E007A6D7D /* GameOddsView.swift in Sources */,
 				E2CC190D2A420E8300195143 /* gameData.swift in Sources */,
-				E2CC191A2A42355100195143 /* GameView.swift in Sources */,
+				E2CC191A2A42355100195143 /* GamesView.swift in Sources */,
 				E2CC18FC2A42070900195143 /* oddsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GameView: View {
+struct GamesView: View {
     
     // Declare my view model to get all my variable and logic.
     @ObservedObject var vm : ViewModel
@@ -16,6 +16,8 @@ struct GameView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 20) {
+                    
+                    SettingsView(selectedRegion: $vm.selectedRegion, selectedSport: $vm.selectedSport)
                     
                     FetchDataButton
                     
@@ -28,7 +30,7 @@ struct GameView: View {
     
     var FetchDataButton : some View {
         VStack {
-            Text(vm.selectedSport.capitalized)
+            Text("\(vm.selectedSport.capitalized) in \(vm.selectedRegion.uppercased())")
                 .bold()
             Button {
                 vm.fetchData()
@@ -46,12 +48,16 @@ struct GameView: View {
     
     var OddScrollingView : some View {
         ForEach(vm.games, id: \.id) { game in
+            let gameViewModel = GameOddViewModel(game: game)
+
             NavigationLink {
-                Text("\(game.awayTeam)")
+                GameOddsView(vm: GameOddViewModel(game: game))
             } label: {
                 HStack {
                     Text("\(game.awayTeam) - \(game.homeTeam)")
                     Spacer()
+                    Text("\(String(format: "%.2f", gameViewModel.possibleReward))%")
+                        .foregroundColor(gameViewModel.possibleReward > 0 ? .green : .red)
                 }
             }
         }
@@ -61,6 +67,6 @@ struct GameView: View {
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView(vm: ViewModel())
+        GamesView(vm: ViewModel())
     }
 }

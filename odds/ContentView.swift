@@ -29,7 +29,7 @@ struct ContentView: View {
                         Text("home view")
                             .tag(tab)
                     case .odds :
-                        GameView(vm: vm)
+                        GamesView(vm: vm)
                             .tag(tab)
                     case .account :
                         Text("\(tab.rawValue) view")
